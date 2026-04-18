@@ -123,3 +123,34 @@ pnpm test
 - Phone numbers are normalized to E.164-style (Indian default: `+91XXXXXXXXXX`) to prevent duplicate accounts for the same mobile.
 - For production deployment, migrate persistence to PostgreSQL repositories.
 - Razorpay supports sandbox and mock fallback when keys are absent.
+
+## Backend Deployment
+
+### Option 1: Fly.io (Recommended for India)
+
+Deploy to Fly.io with automatic scaling and edge proximity to India:
+
+```bash
+fly launch --image-label main
+fly secrets set [environment variables]
+fly deploy
+```
+
+**Advantages:**
+- ✅ Servers in Delhi region (low latency for India)
+- ✅ Simple Docker-based deployment
+- ✅ Built-in health checks & auto-scaling
+- ✅ ~$5-10/month for typical usage
+
+See [FLY_IO_QUICKSTART.md](./FLY_IO_QUICKSTART.md) for quick start guide.
+See [FLY_IO_SETUP.md](./FLY_IO_SETUP.md) for complete documentation.
+
+**Live URL**: https://rides-server.fly.dev/v1/health
+
+### Option 2: Vercel (Alternative)
+
+Deploy serverless functions to Vercel:
+
+See [VERCEL_SETUP.md](./VERCEL_SETUP.md) for setup instructions.
+
+**Live URL**: https://rides-server.vercel.app/v1/health
