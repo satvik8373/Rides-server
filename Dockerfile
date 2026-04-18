@@ -19,6 +19,9 @@ RUN pnpm install --frozen-lockfile
 # Build shared package
 RUN pnpm --filter @ahmedabadcar/shared build
 
+# Build API
+RUN pnpm --filter @ahmedabadcar/api build
+
 # Runtime stage
 FROM node:20-alpine
 
