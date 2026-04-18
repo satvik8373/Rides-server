@@ -29,6 +29,9 @@ export const createApp = () => {
 
   app.use(errorHandlerMiddleware);
 
+  // Startup logging
+  console.log("✓ Express app initialized successfully");
+
   return app;
 };
 
