@@ -27,8 +27,8 @@ FROM node:20-alpine
 
 WORKDIR /app
 
-# Install dumb-init for proper signal handling
-RUN apk add --no-cache dumb-init
+# Install dumb-init and bash for startup script
+RUN apk add --no-cache dumb-init bash
 
 # Copy entire node_modules from builder
 COPY --from=builder /app/node_modules ./node_modules
@@ -39,6 +39,10 @@ COPY --from=builder /app/packages/shared ./packages/shared
 # Copy built API
 COPY --from=builder /app/apps/api/dist ./dist
 
+# Copy startup script
+COPY apps/api/start.sh ./start.sh
+RUN chmod +x ./start.sh
+
 # Health check
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
   CMD node -e "require('http').get('http://localhost:3000/v1/health', (r) => {if (r.statusCode !== 200) throw new Error(r.statusCode)})"
@@ -46,8 +50,8 @@ HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
 # Use dumb-init to handle signals properly
 ENTRYPOINT ["/sbin/dumb-init", "--"]
 
-# Start the application
-CMD ["node", "dist/server.js"]
+# Start the application with diagnostic wrapper
+CMD ["/app/start.sh"]
 
 # Expose port
 EXPOSE 3000
