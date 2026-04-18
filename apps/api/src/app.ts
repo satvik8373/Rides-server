@@ -33,9 +33,3 @@ export const createApp = () => {
 
   return app;
 };
-
-seedDemoData();
-postgresService.connect().catch(() => {
-  // eslint-disable-next-line no-console
-  console.warn("Postgres not connected. Using in-memory store.");
-});
