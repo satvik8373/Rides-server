@@ -1,7 +1,8 @@
-import dotenv from "dotenv";
 import { z } from "zod";
 
-dotenv.config();
+// In production (Render), all environment variables are set directly.
+// In development, create a .env file locally and it will be loaded by your development server.
+// Note: dotenv.config() is intentionally skipped in production deployments.
 
 const envSchema = z.object({
   NODE_ENV: z.enum(["development", "test", "production"]).default("development"),
