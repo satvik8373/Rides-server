@@ -147,7 +147,25 @@ See [FLY_IO_SETUP.md](./FLY_IO_SETUP.md) for complete documentation.
 
 **Live URL**: https://rides-server.fly.dev/v1/health
 
-### Option 2: Vercel (Alternative)
+### Option 2: Render (Docker-based)
+
+Deploy with Docker to Render.com - simple web service setup:
+
+1. Go to [render.com/dashboard](https://render.com/dashboard)
+2. Click **"+ New"** → **"Web Service"**
+3. Connect GitHub repo: `satvik8373/Rides-server`
+4. Configure as described in [RENDER_QUICKSTART.md](./RENDER_QUICKSTART.md)
+
+**Advantages:**
+- ✅ Easiest Docker deployment (automatic from Dockerfile)
+- ✅ Singapore region (30ms to India)
+- ✅ GitHub integration with auto-deploy
+- ✅ ~$12/month for production tier
+
+See [RENDER_QUICKSTART.md](./RENDER_QUICKSTART.md) for quick start guide.
+See [RENDER_SETUP.md](./RENDER_SETUP.md) for complete documentation.
+
+### Option 3: Vercel (Serverless)
 
 Deploy serverless functions to Vercel:
 
