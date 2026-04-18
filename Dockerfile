@@ -8,7 +8,7 @@ RUN npm install -g pnpm@10.11.0
 # Copy workspace
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml tsconfig.base.json ./
 COPY packages ./packages
-COPY apps/api ./apps/api
+COPY apps ./apps
 
 # Install and build
 RUN pnpm install --frozen-lockfile
