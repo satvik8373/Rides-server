@@ -15,10 +15,6 @@ RUN pnpm install --frozen-lockfile
 RUN pnpm --filter @ahmedabadcar/shared build
 RUN pnpm --filter @ahmedabadcar/api build
 
-# Cleanup dev deps
-RUN rm -rf packages/shared/node_modules
-RUN pnpm prune --prod
-
 ENV PORT=3000
 ENV NODE_ENV=production
 
