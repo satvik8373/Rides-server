@@ -6,7 +6,7 @@
   "main": "dist/server.js",
   "scripts": {
     "dev": "pnpm --filter @ahmedabadcar/shared build && tsx watch src/server.ts",
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.json && node build.js",
     "start": "node dist/server.js",
     "lint": "echo \"No lint configured for api\"",
     "test": "vitest run",
