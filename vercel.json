@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "outputDirectory": "apps/api/dist",
-  "builds": [
-    {
-      "src": "apps/api/package.json",
-      "use": "@vercel/node@3.x"
+  "buildCommand": "pnpm install --frozen-lockfile && pnpm --filter @ahmedabadcar/shared build && pnpm --filter @ahmedabadcar/api build",
+  "functions": {
+    "apps/api/dist/server.js": {
+      "runtime": "nodejs20.x",
+      "memory": 512,
+      "maxDuration": 30
     }
-  ],
+  },
   "routes": [
     {
       "src": "/(.*)",
@@ -15,7 +16,6 @@
   ],
   "env": {
     "NODE_ENV": "production"
-  },
-  "buildCommand": "pnpm install --frozen-lockfile && pnpm --filter @ahmedabadcar/shared build && pnpm --filter @ahmedabadcar/api build"
+  }
 }
 
