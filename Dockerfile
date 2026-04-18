@@ -30,6 +30,10 @@ WORKDIR /app
 # Install dumb-init for proper signal handling
 RUN apk add --no-cache dumb-init
 
+# Set port environment variable
+ENV PORT=3000
+ENV NODE_ENV=production
+
 # Copy entire node_modules from builder
 COPY --from=builder /app/node_modules ./node_modules
 
@@ -38,6 +42,9 @@ COPY --from=builder /app/packages/shared ./packages/shared
 
 # Copy built API
 COPY --from=builder /app/apps/api/dist ./dist
+
+# Expose port
+EXPOSE 3000
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
