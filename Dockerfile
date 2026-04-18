@@ -1,41 +1,28 @@
-FROM node:20-alpine AS builder
+FROM node:20-alpine
 
 WORKDIR /app
 
 # Install pnpm
 RUN npm install -g pnpm@10.11.0
 
-# Copy workspace files
+# Copy workspace
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml tsconfig.base.json ./
-
-# Copy source
 COPY packages ./packages
 COPY apps/api ./apps/api
 
-# Install dependencies (all packages needed)
+# Install and build
 RUN pnpm install --frozen-lockfile
-
-# Build
 RUN pnpm --filter @ahmedabadcar/shared build
 RUN pnpm --filter @ahmedabadcar/api build
 
-# Runtime stage
-FROM node:20-alpine
-
-WORKDIR /app
-
-# Copy ALL node_modules from builder (must include dotenv)
-COPY --from=builder /app/node_modules ./node_modules
-
-# Copy built dist
-COPY --from=builder /app/apps/api/dist ./dist
-
-# Copy shared package
-COPY --from=builder /app/packages/shared ./packages/shared
+# Cleanup dev deps
+RUN rm -rf packages/shared/node_modules
+RUN pnpm prune --prod
 
 ENV PORT=3000
 ENV NODE_ENV=production
 
 EXPOSE 3000
 
-CMD ["node", "dist/server.js"]
+CMD ["node", "apps/api/dist/server.js"]
+
