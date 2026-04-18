@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "AhmedabadCar",
+    "slug": "ahmedabadcar",
+    "scheme": "ahmedabadcar",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#f9f9f7"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ahmedabadcar.mobile"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0f6e56"
+      },
+      "package": "com.ahmedabadcar.mobile"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "AhmedabadCar uses your location to suggest nearby pickup points and routes."
+        }
+      ]
+    ],
+    "extra": {
+      "apiBaseUrl": "http://localhost:4000/v1",
+      "firebaseApiKey": "",
+      "firebaseAuthDomain": "",
+      "firebaseDatabaseUrl": "",
+      "firebaseProjectId": "",
+      "firebaseStorageBucket": "",
+      "firebaseMessagingSenderId": "",
+      "firebaseAppId": "",
+      "razorpayKeyId": "rzp_test_xxxxx"
+    }
+  }
+}

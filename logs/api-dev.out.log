@@ -1,0 +1,17 @@
+
+> @ahmedabadcar/api@1.0.0 dev E:\Ahemdabad Ride\apps\api
+> pnpm --filter @ahmedabadcar/shared build && tsx watch src/server.ts
+
+
+> @ahmedabadcar/shared@1.0.0 build E:\Ahemdabad Ride\packages\shared
+> tsc -p tsconfig.json
+
+AhmedabadCar API listening on http://localhost:4000 (port 4000)
+[0mGET /v1/health [32m200[0m 2.268 ms - 248[0m
+[0mGET /v1/health [32m200[0m 0.768 ms - 248[0m
+[0mPOST /v1/auth/send-otp [32m200[0m 14.327 ms - 156[0m
+[0mPOST /v1/auth/send-otp [32m200[0m 1.712 ms - 156[0m
+[0mGET /v1/health [32m200[0m 0.431 ms - 248[0m
+[0mPOST /v1/auth/send-otp [32m200[0m 1.552 ms - 156[0m
+[0mPOST /v1/auth/verify-otp [32m200[0m 14.418 ms - 1038[0m
+[0mGET /v1/users/bootstrap [32m200[0m 2.373 ms - 680[0m

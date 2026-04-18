@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AhmedabadCar - Splash</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#802a0b",
+                        "on-primary-container": "#9aedcf",
+                        "surface": "#f9f9f7",
+                        "on-tertiary-fixed-variant": "#3f35a3",
+                        "on-surface": "#1a1c1b",
+                        "on-secondary-container": "#732103",
+                        "surface-container": "#eeeeec",
+                        "surface-container-low": "#f4f4f1",
+                        "tertiary-container": "#5b52bf",
+                        "surface-container-highest": "#e2e3e0",
+                        "on-primary-fixed": "#002117",
+                        "on-tertiary-fixed": "#140067",
+                        "inverse-surface": "#2f3130",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "surface-dim": "#dadad8",
+                        "inverse-on-surface": "#f1f1ef",
+                        "surface-container-high": "#e8e8e6",
+                        "secondary-fixed": "#ffdbd0",
+                        "error-container": "#ffdad6",
+                        "tertiary": "#4238a5",
+                        "on-error": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#84d6b9",
+                        "tertiary-fixed": "#e3dfff",
+                        "background": "#f9f9f7",
+                        "secondary-container": "#fd8862",
+                        "tertiary-fixed-dim": "#c5c0ff",
+                        "surface-variant": "#e2e3e0",
+                        "surface-tint": "#086b53",
+                        "on-tertiary-container": "#ddd9ff",
+                        "outline": "#6f7a74",
+                        "on-primary-fixed-variant": "#00513e",
+                        "outline-variant": "#bec9c3",
+                        "on-surface-variant": "#3f4944",
+                        "on-background": "#1a1c1b",
+                        "surface-bright": "#f9f9f7",
+                        "primary-fixed": "#a0f3d4",
+                        "primary": "#005440",
+                        "secondary-fixed-dim": "#ffb59e",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#0f6e56",
+                        "secondary": "#9f4121",
+                        "error": "#ba1a1a",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed-dim": "#84d6b9",
+                        "on-secondary-fixed": "#3a0b00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0F6E56;
+        }
+        /* Custom gradient for the background depth as per design system strategy */
+        .splash-gradient {
+            background: linear-gradient(135deg, #005440 0%, #0F6E56 100%);
+        }
+        /* Minimalist glass texture */
+        .glass-overlay {
+            background: radial-gradient(circle at center, rgba(15, 110, 86, 0) 0%, rgba(0, 84, 64, 0.4) 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="antialiased overflow-hidden">
+<!-- Primary Splash Container -->
+<main class="relative h-screen w-full flex items-center justify-center splash-gradient px-8 overflow-hidden">
+<!-- Subtle Background Texture -->
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<div class="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] rounded-full bg-primary-fixed filter blur-[120px]"></div>
+<div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-on-primary-container filter blur-[100px]"></div>
+</div>
+<div class="glass-overlay absolute inset-0 pointer-events-none"></div>
+<!-- Content Shell -->
+<div class="relative z-10 flex flex-col items-center max-w-sm w-full">
+<!-- Logo Cluster -->
+<div class="flex flex-col items-center gap-8 mb-12">
+<!-- Brand Mark Container -->
+<div class="w-24 h-24 bg-surface-container-lowest/10 backdrop-blur-md rounded-[28px] flex items-center justify-center shadow-2xl ring-1 ring-white/20">
+<div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-[0px_8px_24px_rgba(0,0,0,0.15)]">
+<span class="material-symbols-outlined text-primary-container text-4xl" data-icon="directions_car" style="font-variation-settings: 'FILL' 1;">directions_car</span>
+</div>
+</div>
+<!-- Headline Brand Text -->
+<div class="text-center">
+<h1 class="text-white text-4xl font-black tracking-tighter mb-2">
+                        AhmedabadCar
+                    </h1>
+<div class="h-1 w-12 bg-on-primary-container mx-auto rounded-full opacity-60"></div>
+</div>
+</div>
+<!-- Tagline -->
+<div class="text-center px-4">
+<p class="text-on-primary-container/90 text-lg font-medium leading-relaxed tracking-tight">
+                    Share the road, share the cost
+                </p>
+</div>
+<!-- Minimal Loading Indicator Placeholder -->
+<div class="mt-24 flex gap-2">
+<div class="w-2 h-2 rounded-full bg-white opacity-40"></div>
+<div class="w-2 h-2 rounded-full bg-white opacity-100"></div>
+<div class="w-2 h-2 rounded-full bg-white opacity-40"></div>
+</div>
+</div>
+<!-- Editorial Spatial Element: Bottom Corner Indicator -->
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 text-center">
+<span class="text-[10px] text-white/40 uppercase tracking-[0.3em] font-extrabold">
+                Premium Transit Authority
+            </span>
+</div>
+<!-- Abstract Graphical Elements for Editorial Polish -->
+<div class="absolute top-0 right-0 p-12 hidden md:block opacity-20">
+<div class="text-white font-black text-9xl tracking-tighter pointer-events-none select-none">
+                01
+            </div>
+</div>
+</main>
+<!-- Suppressed Shell Logic: Splash screens do not render BottomNavBar or TopAppBar as per "Relevance Check" rule -->
+</body></html>

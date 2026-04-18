@@ -1,0 +1,25 @@
+{
+  "name": "@ahmedabadcar/shared",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "echo \"No lint configured for shared\"",
+    "test": "echo \"No tests configured for shared\"",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "format": "echo \"No formatter configured for shared\""
+  },
+  "dependencies": {
+    "zod": "^3.25.75"
+  }
+}

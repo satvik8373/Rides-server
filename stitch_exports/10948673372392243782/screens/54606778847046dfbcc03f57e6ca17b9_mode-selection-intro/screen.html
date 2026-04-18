@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AhmedabadCar | Choose Your Path</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed-variant": "#802a0b",
+                    "on-primary-container": "#9aedcf",
+                    "surface": "#f9f9f7",
+                    "on-tertiary-fixed-variant": "#3f35a3",
+                    "on-surface": "#1a1c1b",
+                    "on-secondary-container": "#732103",
+                    "surface-container": "#eeeeec",
+                    "surface-container-low": "#f4f4f1",
+                    "tertiary-container": "#5b52bf",
+                    "surface-container-highest": "#e2e3e0",
+                    "on-primary-fixed": "#002117",
+                    "on-tertiary-fixed": "#140067",
+                    "inverse-surface": "#2f3130",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "surface-dim": "#dadad8",
+                    "inverse-on-surface": "#f1f1ef",
+                    "surface-container-high": "#e8e8e6",
+                    "secondary-fixed": "#ffdbd0",
+                    "error-container": "#ffdad6",
+                    "tertiary": "#4238a5",
+                    "on-error": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "inverse-primary": "#84d6b9",
+                    "tertiary-fixed": "#e3dfff",
+                    "background": "#f9f9f7",
+                    "secondary-container": "#fd8862",
+                    "tertiary-fixed-dim": "#c5c0ff",
+                    "surface-variant": "#e2e3e0",
+                    "surface-tint": "#086b53",
+                    "on-tertiary-container": "#ddd9ff",
+                    "outline": "#6f7a74",
+                    "on-primary-fixed-variant": "#00513e",
+                    "outline-variant": "#bec9c3",
+                    "on-surface-variant": "#3f4944",
+                    "on-background": "#1a1c1b",
+                    "surface-bright": "#f9f9f7",
+                    "primary-fixed": "#a0f3d4",
+                    "primary": "#005440",
+                    "secondary-fixed-dim": "#ffb59e",
+                    "on-primary": "#ffffff",
+                    "primary-container": "#0f6e56",
+                    "secondary": "#9f4121",
+                    "error": "#ba1a1a",
+                    "on-secondary": "#ffffff",
+                    "primary-fixed-dim": "#84d6b9",
+                    "on-secondary-fixed": "#3a0b00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .editorial-spacing {
+            letter-spacing: -0.02em;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface overflow-x-hidden min-h-screen">
+<!-- Header Navigation (Suppressed Shelves applied based on Transactional Flow) -->
+<!-- The TopAppBar is rendered as a light anchor for brand identity during selection -->
+<header class="sticky top-0 z-50 bg-[#f9f9f7]/80 backdrop-blur-xl shadow-[0px_4px_12px_rgba(26,28,27,0.04)] no-border tonal-layering">
+<div class="flex justify-between items-center w-full px-6 py-4">
+<h1 class="text-xl font-bold tracking-tighter text-[#005440] font-headline">AhmedabadCar</h1>
+<div class="flex items-center gap-4">
+<span class="text-on-surface-variant text-sm font-medium">Need Help?</span>
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-sm" data-icon="help_outline">help_outline</span>
+</div>
+</div>
+</div>
+</header>
+<main class="relative min-h-[calc(100vh-72px)] flex flex-col items-center justify-center px-6 py-12">
+<!-- Background Decorative Elements -->
+<div class="absolute inset-0 pointer-events-none overflow-hidden">
+<div class="absolute -top-24 -left-24 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-24 -right-24 w-96 h-96 bg-secondary/5 rounded-full blur-3xl"></div>
+</div>
+<div class="relative z-10 w-full max-w-4xl mx-auto space-y-12">
+<!-- Hero Heading Section -->
+<div class="text-center space-y-4 max-w-2xl mx-auto">
+<h2 class="text-4xl md:text-5xl font-extrabold editorial-spacing tracking-tight text-on-surface">
+                    Welcome to the <span class="text-primary">Urban Transit</span> Hub.
+                </h2>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                    Choose your journey today. Whether you're behind the wheel or relaxing in the passenger seat, AhmedabadCar provides a premium experience.
+                </p>
+</div>
+<!-- Mode Selection Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 px-2">
+<!-- Drive Card -->
+<button class="group relative flex flex-col items-start p-8 rounded-[24px] glass-card text-left transition-all duration-300 hover:-translate-y-2 hover:shadow-[0px_24px_48px_rgba(26,28,27,0.08)] outline-none ring-offset-4 focus:ring-2 focus:ring-primary/20">
+<div class="w-full h-48 mb-8 rounded-2xl overflow-hidden bg-surface-container-low relative">
+<img alt="Premium vehicle interior" class="w-full h-full object-cover mix-blend-overlay opacity-80" data-alt="luxury car interior steering wheel at dusk with city lights reflecting on the dashboard and soft warm leather textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJRZQf2MhSFae2biN7zQci-NTR309J8FwIFsZCW9B0W7VxkOoZ0dyilQQI6dHZfBtY8hfEEZSqqOVCrm78wyzunPvhZUQbygmFylR_mbYmIjTYkSi3fumWhOLqHguLPB_W1fUCb3mKYxn7_YfErHzIDCeYESnh-9r5FmNiCwIa8i3ImGLur_8czdNZfZ0AQtJH2h1qwZween4CIsABKochYbE-6Jz4F8b4NFs2WnoULVNpFzbtnSQGhix_ThldAjcAMIBcyUoyeB95"/>
+<div class="absolute inset-0 bg-gradient-to-br from-primary/40 to-transparent"></div>
+<div class="absolute bottom-4 left-4 flex items-center gap-2 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="directions_car">directions_car</span>
+<span class="text-xs font-bold text-primary uppercase tracking-widest">Driver Mode</span>
+</div>
+</div>
+<h3 class="text-2xl font-bold text-on-surface mb-2 group-hover:text-primary transition-colors">I want to Drive</h3>
+<p class="text-on-surface-variant text-sm mb-8 leading-relaxed">
+                        Earn on your own terms. Set your schedule, navigate the city, and join our elite network of professional partners.
+                    </p>
+<div class="mt-auto w-full flex items-center justify-between">
+<span class="text-primary font-extrabold text-sm uppercase tracking-widest group-hover:translate-x-2 transition-transform duration-300 flex items-center gap-2">
+                            Get Started <span class="material-symbols-outlined">arrow_forward</span>
+</span>
+</div>
+<!-- Decorative gradient border effect -->
+<div class="absolute inset-0 border-2 border-transparent group-hover:border-primary/10 rounded-[24px] transition-colors pointer-events-none"></div>
+</button>
+<!-- Ride Card -->
+<button class="group relative flex flex-col items-start p-8 rounded-[24px] glass-card text-left transition-all duration-300 hover:-translate-y-2 hover:shadow-[0px_24px_48px_rgba(26,28,27,0.08)] outline-none ring-offset-4 focus:ring-2 focus:ring-secondary/20">
+<div class="w-full h-48 mb-8 rounded-2xl overflow-hidden bg-surface-container-low relative">
+<img alt="Passenger relaxing in a car" class="w-full h-full object-cover mix-blend-overlay opacity-80" data-alt="happy passenger looking out of a car window at sunset with soft warm light hitting their face and cityscape bokeh background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvw3jZ_mrQgBhOPs2bZ0vZGT3jOx-UpOpD2Yyq3wn1yKEcwzgXHQurUrcQXHJNfdzW8VkLtbzQBVINlDjr7GsQfMAnRh2AbBI_dSJFzjtTYKYFZfOQhSoHe2uOj2ZXpXaoZvmfBqA_AgvMFR55_zgsTSi9RI-HRgrsdc4rZJAmM699D6QkX1a9MQfZ_ZzV1dgchKuCVq3SNu6nuLA1hVTdRes4DEIry5wk3neU-2bDHf1G4jsB-rZ2_Lka7IbgD7YRHg4-ITePPJn-"/>
+<div class="absolute inset-0 bg-gradient-to-br from-secondary/40 to-transparent"></div>
+<div class="absolute bottom-4 left-4 flex items-center gap-2 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-secondary text-xl" data-icon="person">person</span>
+<span class="text-xs font-bold text-secondary uppercase tracking-widest">Rider Mode</span>
+</div>
+</div>
+<h3 class="text-2xl font-bold text-on-surface mb-2 group-hover:text-secondary transition-colors">I want to Ride</h3>
+<p class="text-on-surface-variant text-sm mb-8 leading-relaxed">
+                        Relax and reach your destination in comfort. Choose from our fleet of premium vehicles for every occasion.
+                    </p>
+<div class="mt-auto w-full flex items-center justify-between">
+<span class="text-secondary font-extrabold text-sm uppercase tracking-widest group-hover:translate-x-2 transition-transform duration-300 flex items-center gap-2">
+                            Book a Trip <span class="material-symbols-outlined">arrow_forward</span>
+</span>
+</div>
+<!-- Decorative gradient border effect -->
+<div class="absolute inset-0 border-2 border-transparent group-hover:border-secondary/10 rounded-[24px] transition-colors pointer-events-none"></div>
+</button>
+</div>
+<!-- Footer Details -->
+<div class="flex flex-col items-center gap-6 pt-8">
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-lg" data-icon="verified">verified</span>
+<span class="text-xs text-on-surface-variant font-medium">Safe &amp; Verified</span>
+</div>
+<div class="w-px h-4 bg-outline-variant/30"></div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-lg" data-icon="schedule">schedule</span>
+<span class="text-xs text-on-surface-variant font-medium">24/7 Availability</span>
+</div>
+</div>
+<p class="text-[10px] text-on-surface-variant/60 uppercase tracking-[0.2em] font-bold">
+                    By continuing you agree to the Terms of Service
+                </p>
+</div>
+</div>
+</main>
+<!-- Map Context Hint (Subtle Background Detail) -->
+<div class="fixed inset-0 -z-10 opacity-[0.03] pointer-events-none">
+<div class="w-full h-full bg-cover bg-center" data-alt="minimalist topographic map of a city with clean lines and subtle gray tones" data-location="Ahmedabad" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDMn4zqtNw2E7lkxZmbtBpA51av2Mxh7OZJDrShvDNiF6yYt3t1MY0jJwEF5onDBA6pGVvcqIWXArtTfUHzjIrEFMZoKosyysuMCk1WnsM61Y5gmD4izE16WrQ27dzcxzMpvL8n-FqJmwkZhJ6zIs349OkaQ8gUujmZ9ITd8MI_rkb08neFYP3AqidvdX90G_-Uk6ItJrVLJFVgIc-BdcXi5vqIu3_KI2E6Nxw6C1IuvT9bawEJMbnFuuSN93kZVe3TJ6aQmCH8I8ye')"></div>
+</div>
+</body></html>

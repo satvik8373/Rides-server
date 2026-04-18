@@ -1,0 +1,27 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "types": [
+      "react",
+      "react-native"
+    ],
+    "allowJs": false,
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "@ahmedabadcar/shared": [
+        "../../packages/shared/src/index.ts"
+      ],
+      "@ahmedabadcar/shared/*": [
+        "../../packages/shared/src/*"
+      ]
+    }
+  },
+  "include": [
+    "App.tsx",
+    "src"
+  ]
+}
+

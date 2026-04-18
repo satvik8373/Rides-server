@@ -1,0 +1,26 @@
+{
+  "rules": {
+    "bookings": {
+      "$bookingId": {
+        ".read": "auth != null && root.child('bookingParticipants').child($bookingId).child(auth.uid).exists()",
+        "chat": {
+          ".read": "auth != null && root.child('bookingParticipants').child($bookingId).child(auth.uid).exists()",
+          "$messageId": {
+            ".write": "auth != null && root.child('bookingParticipants').child($bookingId).child(auth.uid).exists()",
+            ".validate": "newData.hasChildren(['id', 'bookingId', 'senderId', 'message', 'createdAt']) && newData.child('bookingId').val() === $bookingId"
+          }
+        }
+      }
+    },
+    "trips": {
+      "$tripId": {
+        "location": {
+          ".read": "auth != null && root.child('tripParticipants').child($tripId).child(auth.uid).exists()",
+          ".write": "auth != null && root.child('tripDriver').child($tripId).val() === auth.uid",
+          ".validate": "newData.hasChildren(['tripId', 'driverId', 'lat', 'lng', 'timestamp']) && newData.child('tripId').val() === $tripId"
+        }
+      }
+    }
+  }
+}
+

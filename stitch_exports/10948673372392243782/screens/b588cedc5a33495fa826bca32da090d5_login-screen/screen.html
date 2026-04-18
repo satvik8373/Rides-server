@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Login - AhmedabadCar</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed-variant": "#802a0b",
+                    "on-primary-container": "#9aedcf",
+                    "surface": "#f9f9f7",
+                    "on-tertiary-fixed-variant": "#3f35a3",
+                    "on-surface": "#1a1c1b",
+                    "on-secondary-container": "#732103",
+                    "surface-container": "#eeeeec",
+                    "surface-container-low": "#f4f4f1",
+                    "tertiary-container": "#5b52bf",
+                    "surface-container-highest": "#e2e3e0",
+                    "on-primary-fixed": "#002117",
+                    "on-tertiary-fixed": "#140067",
+                    "inverse-surface": "#2f3130",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "surface-dim": "#dadad8",
+                    "inverse-on-surface": "#f1f1ef",
+                    "surface-container-high": "#e8e8e6",
+                    "secondary-fixed": "#ffdbd0",
+                    "error-container": "#ffdad6",
+                    "tertiary": "#4238a5",
+                    "on-error": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "inverse-primary": "#84d6b9",
+                    "tertiary-fixed": "#e3dfff",
+                    "background": "#f9f9f7",
+                    "secondary-container": "#fd8862",
+                    "tertiary-fixed-dim": "#c5c0ff",
+                    "surface-variant": "#e2e3e0",
+                    "surface-tint": "#086b53",
+                    "on-tertiary-container": "#ddd9ff",
+                    "outline": "#6f7a74",
+                    "on-primary-fixed-variant": "#00513e",
+                    "outline-variant": "#bec9c3",
+                    "on-surface-variant": "#3f4944",
+                    "on-background": "#1a1c1b",
+                    "surface-bright": "#f9f9f7",
+                    "primary-fixed": "#a0f3d4",
+                    "primary": "#005440",
+                    "secondary-fixed-dim": "#ffb59e",
+                    "on-primary": "#ffffff",
+                    "primary-container": "#0f6e56",
+                    "secondary": "#9f4121",
+                    "error": "#ba1a1a",
+                    "on-secondary": "#ffffff",
+                    "primary-fixed-dim": "#84d6b9",
+                    "on-secondary-fixed": "#3a0b00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at top right, #a0f3d4 0%, transparent 40%),
+                        radial-gradient(circle at bottom left, #e3dfff 0%, transparent 40%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-fixed min-h-screen flex flex-col items-center justify-center overflow-hidden hero-gradient">
+<!-- Language Toggle Top Right -->
+<div class="fixed top-8 right-8 z-50">
+<div class="flex items-center bg-surface-container-low p-1 rounded-full shadow-sm">
+<button class="px-4 py-1.5 rounded-full text-xs font-extrabold tracking-widest bg-surface-container-lowest text-primary shadow-sm transition-all">EN</button>
+<button class="px-4 py-1.5 rounded-full text-xs font-extrabold tracking-widest text-on-surface-variant hover:text-primary transition-all">GU</button>
+</div>
+</div>
+<!-- Login Container -->
+<main class="w-full max-w-[420px] px-6">
+<div class="glass-panel p-8 md:p-10 rounded-[32px] shadow-[0px_4px_12px_rgba(26,28,27,0.04)] flex flex-col">
+<!-- Brand Anchor -->
+<header class="mb-10 text-center">
+<div class="inline-flex items-center justify-center mb-4 text-primary">
+<span class="material-symbols-outlined text-4xl" data-icon="directions_car">directions_car</span>
+</div>
+<h1 class="text-3xl font-black tracking-tighter text-primary mb-1">AhmedabadCar</h1>
+<p class="text-on-surface-variant text-sm font-medium tracking-tight">Your premium transit concierge.</p>
+</header>
+<!-- Login Form -->
+<form action="#" class="space-y-6">
+<!-- Mobile Input Group -->
+<div class="space-y-2">
+<label class="text-[11px] font-extrabold uppercase tracking-widest text-on-surface-variant px-1">Mobile Number</label>
+<div class="flex gap-2">
+<!-- Country Selector -->
+<div class="relative group">
+<div class="flex items-center gap-1 bg-surface-container-highest px-3 py-4 rounded-xl cursor-pointer hover:bg-surface-container-high transition-colors">
+<span class="text-sm font-bold text-on-surface">+91</span>
+<span class="material-symbols-outlined text-sm text-outline" data-icon="expand_more">expand_more</span>
+</div>
+</div>
+<!-- Number Field -->
+<div class="flex-1 relative">
+<input class="w-full bg-surface-container-highest border-none focus:ring-2 focus:ring-tertiary/30 rounded-xl px-4 py-4 text-on-surface font-semibold placeholder:text-outline placeholder:font-normal transition-all" placeholder="Enter number" type="tel"/>
+</div>
+</div>
+</div>
+<!-- Primary Action -->
+<button class="w-full bg-gradient-to-br from-primary to-primary-container text-white py-4 rounded-xl font-bold tracking-tight shadow-[0px_8px_16px_rgba(0,84,64,0.15)] active:scale-95 transition-all flex items-center justify-center gap-2" type="submit">
+<span>Send OTP</span>
+<span class="material-symbols-outlined text-lg" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<!-- Divider -->
+<div class="flex items-center gap-4 py-2">
+<div class="h-[1px] flex-1 bg-outline-variant opacity-20"></div>
+<span class="text-[10px] font-extrabold uppercase tracking-widest text-outline">or continue with</span>
+<div class="h-[1px] flex-1 bg-outline-variant opacity-20"></div>
+</div>
+<!-- Social Actions -->
+<div class="grid grid-cols-1 gap-3">
+<button class="flex items-center justify-center gap-3 bg-surface-container-lowest border border-outline-variant/10 py-4 rounded-xl hover:bg-white active:scale-95 transition-all shadow-sm" type="button">
+<svg class="w-5 h-5" viewbox="0 0 24 24">
+<path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path>
+<path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path>
+<path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"></path>
+<path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"></path>
+</svg>
+<span class="text-sm font-bold text-on-surface">Google Account</span>
+</button>
+</div>
+</form>
+<!-- Footer Meta -->
+<footer class="mt-10 text-center space-y-4">
+<p class="text-xs text-on-surface-variant font-medium leading-relaxed px-4">
+                    By continuing, you agree to AhmedabadCar's 
+                    <a class="text-tertiary font-bold hover:underline" href="#">Terms of Service</a> &amp; 
+                    <a class="text-tertiary font-bold hover:underline" href="#">Privacy Policy</a>
+</p>
+<div class="pt-4">
+<button class="text-xs font-extrabold uppercase tracking-widest text-primary flex items-center justify-center gap-1 mx-auto hover:gap-2 transition-all">
+                        New here? Create Account
+                    </button>
+</div>
+</footer>
+</div>
+<!-- Visual Anchor / Background Decoration -->
+<div class="mt-12 text-center">
+<div class="flex justify-center -space-x-3 mb-4">
+<img class="w-10 h-10 rounded-full border-2 border-surface object-cover" data-alt="portrait of a smiling professional driver in a clean white shirt against a soft blurred city background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBslOAAxKOJyTkwV-xZ7GOspZjg9a2fA7Mhn3JBHZHSRC7YlTbJ8l0qcfyxyYUCmwPpBhJYtWXqFo7X3Jm7GtSlBKXIpeajVKjpOdtHwcbC1kID3-BhnZjkbZj9L6vj_9qLJJ8OhIS-xKhsCFiZZHzfGY_ONI-EpNACY5xdC9hltK08LZvaISM2tGHKnp-OLVU-c4Z8FXzFaPEHDl6vYRgKaifvrH1gUuGbYb-GwmPDQRI-2-DVs3PV6lDm6kbh5YwdjdOv8HkQAJ_S"/>
+<img class="w-10 h-10 rounded-full border-2 border-surface object-cover" data-alt="happy business traveler woman looking out a car window with soft morning sunlight on her face" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdP2F535h7kTse3ZvQ05372GVgBtFvlsc80GbOn9iKX02pZn0R0emZae0yUr-xSfyS8Pojk9W2IIk8lIebvnHELjT1K5Pkko1ubYXrpjL07e6ExGkhO_eESOFhgTiWGVV6XaP9KDAKsBohimS2NLhM-cD84Dn5XQCA9FWBgPF3Zju6Hdpt-0uY1fPbtCEKtsxJf7tUEGMqF7bClOooZ3vllyIFwNmdMdMx74vsU1eOAahMLJz5Am-LH3i8WcrkenznvnW3X8vzx-jQ"/>
+<img class="w-10 h-10 rounded-full border-2 border-surface object-cover" data-alt="portrait of a young professional man in a suit with a modern architectural background in soft focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0ElC8fEfbUU3JlphZwc5M31Krhh3hVxRJJVF1K-tF4g3VE14WAPtzgHO1NaOmKcqdwD15B8sbfV5fggqzWwYCKo7OfsTdkhRU77wJtWn7I3pEPr1-PtWx0gBebRaQNuso2MVzaXeyaJEJpRynTyqXMR3veLmuBeDO5ZCUm_9hyUEdBdKF3sSvYGuGzmD4S46wZ1B-LuVO2gLgCLZBTZISM5D83JokwnXJf5TYrRdmg5yRL0QKfS-dAGlsx6PuYJS59qXToTH2S9Zm"/>
+<div class="w-10 h-10 rounded-full border-2 border-surface bg-primary-fixed flex items-center justify-center text-[10px] font-bold text-on-primary-fixed">
+                    +50k
+                </div>
+</div>
+<p class="text-[10px] font-extrabold uppercase tracking-widest text-on-surface-variant/60">Trusted by over 50,000 riders in Ahmedabad</p>
+</div>
+</main>
+<!-- Visual Backdrop Element -->
+<div class="absolute -bottom-24 -left-24 w-96 h-96 bg-primary/5 rounded-full blur-[100px] -z-10"></div>
+<div class="absolute top-1/2 -right-48 w-[500px] h-[500px] bg-tertiary/5 rounded-full blur-[120px] -z-10"></div>
+</body></html>

@@ -1,0 +1,90 @@
+{
+  "projectId": "10948673372392243782",
+  "projectTitle": "AhmedabadCar UI/UX System",
+  "designSystem": {
+    "instanceId": "asset-stub-assets-9db7a21aeab246f68d0e6c7ad5af4383-1775205604646",
+    "assetId": "9db7a21aeab246f68d0e6c7ad5af4383",
+    "displayName": "Emerald Mobility",
+    "note": "Design System instance does not expose a direct screenshot/html endpoint via Stitch get_screen. Theme tokens are exported in design-system-theme.json."
+  },
+  "screens": [
+    {
+      "id": "3d6b85d29c0f4676879a68163737b04a",
+      "title": "Splash Screen",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/ADBb0ujxnH_RUeMh9YKUC3E-LrV9iXdNtNq7jm1CgMNFJNeGobhO2ucwZNrpQ1asxWRBL0-ImbpvMUk2aoK-C_xFelf5Ri19RA9qHJnzpe_PJSDcgHQ7go0PZVPlEFQOoHHAcdnpr0bWAdy9eG3LXPReLNIZ03YUcTsIQsgDXDZWruTL5WPnRvriYzQIcGCG1hm60vXn0LgoT5fn-MZnsK5eVzKYxjkJRz_iKSCjpKwM_I6fmenyp3QuFBSJtIJZ",
+      "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzVhZWJiOTBkMDNkNTRjMjBiN2U1ZTJhNDQ0NzlmMzg5EgsSBxDlvJ6zsxAYAZIBJAoKcHJvamVjdF9pZBIWQhQxMDk0ODY3MzM3MjM5MjI0Mzc4Mg&filename=&opi=89354086"
+    },
+    {
+      "id": "2b998de3019846d280902207c048cd46",
+      "title": "OTP Verification",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/ADBb0uhRIlWQOPihcwneTPuAGN-C4UVUeLF69aEytiCxUhjX5Ub6ulHUrH2zEJ2_E-DRBNukcVR5lAsHtstpUutvSCVfslSXLYCsQUpGxmFGvQKYYoKDUvxSPBgdQQ7qmubDrCeGwkT5ctSYFcykRUnmbjHM4K1_vsxWEqbZoh0zCDsamsGflG-g90ZI6W38cTPsPD55m_S0_F8iDczb79_o0KtpC5GEYFBINq5Ei2sBKlzG6afqvYgxvwPBIR0",
+      "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sX2ZkNWRlMzc0ODg4OTRmODk4MTdmNDAzNmU1ZmUzNGEwEgsSBxDlvJ6zsxAYAZIBJAoKcHJvamVjdF9pZBIWQhQxMDk0ODY3MzM3MjM5MjI0Mzc4Mg&filename=&opi=89354086"
+    },
+    {
+      "id": "b588cedc5a33495fa826bca32da090d5",
+      "title": "Login Screen",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/ADBb0ujmfB2RRpdz0kmhdg_J0KDOgjFItRfQG0NfWWtiUzVhaM8AXgVzThgUw9k7by_RfNPaXJhMCjDjmwNrvPzxZJVsbVBhRv1iHBMfy5v47RbHBNGmmn5SmM-XCbTOBoaG_s8kX8qLEeO3PHpFW5ELmX-5VfR-4cS7etu0WIWkSpzM1yjIrWIpgGcX6vw_yUC3AEVMf0aD2K4zWVoWYIyssszF6Rkm4-pEcNyriCrOzNFzQwwhVr1NlrWmz8I",
+      "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sX2JjYzdhOTJlNTE4ZTRmYzE4OGMyMzA0YTJjZjY3MWVmEgsSBxDlvJ6zsxAYAZIBJAoKcHJvamVjdF9pZBIWQhQxMDk0ODY3MzM3MjM5MjI0Mzc4Mg&filename=&opi=89354086"
+    },
+    {
+      "id": "43d9aac090b3460b9d6f57d473a62bb5",
+      "title": "Profile Setup",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/ADBb0ujqAdWnFA6ht7mwwawLS8lex_TWMIzBiMivSkjgRjZuHvsa5NpCjG4oLw85CP-izuCU2g8NgZyLdY0jmblqzVAqrqwKXIHDM33_uZt7FIwkBgk0rRvrDBlolJQHZiQOoyA7CtYmycZ9NUSPdRx54N2jYiIV7daxTidiYil0hJa63Buz6CSAFqJiFqtovVszyhzvgG8AgKvzC1no2ubH3ZI-SiRhLmHZwVFVlnQPdg9m5IF3MCtwTrgVyfZ7",
+      "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzVlMjY5ZGExYjQzMTQ5MDA5NmM0ZWU5YWI1MzFkYjFmEgsSBxDlvJ6zsxAYAZIBJAoKcHJvamVjdF9pZBIWQhQxMDk0ODY3MzM3MjM5MjI0Mzc4Mg&filename=&opi=89354086"
+    },
+    {
+      "id": "54606778847046dfbcc03f57e6ca17b9",
+      "title": "Mode Selection Intro",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/ADBb0uhaYVZxcK5eyQEfrSe6JVpsKmhFgseSNbISsxjVgYD3p4Oj1TtCuWHu-i2jGN_8jYB6kqTRpG6D3OpkBmIuiE94wK0jxqV3RIq2i-tw2YjaqXRJbjqMKilNeLZBncCQl1-2KA5168Pin4H-_bNVcAFw-WMsLlE5HlOXXowhhhSd1LJAijB6KelEKjVAwGloIh1-DFx4xM6ardRt8ioZf0eNT9c-tV6kzDMljpL7Bf2ilXPc3XrS9ebfRl9o",
+      "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzE5ZGZjOGU3ODBkZjQzODc4NjBkOWZiYjE0NjA5ODMzEgsSBxDlvJ6zsxAYAZIBJAoKcHJvamVjdF9pZBIWQhQxMDk0ODY3MzM3MjM5MjI0Mzc4Mg&filename=&opi=89354086"
+    },
+    {
+      "id": "a4455a20260743068a3f8e237cbeac9d",
+      "title": "Rider Home",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/ADBb0uig60zi4FbGsV6GNAism2jgCzFKWswZycV7rO45ZM14e-07BLWY0Gb3xJ7fughlbqZ6T_ZraJnT2UiL4NY8h9e3J0AFw3tRvSgfcKr0DgHMU6AawkEHauYcUolq8HQ_fR86XT8QAQwSAnlVI6K-uRJkQg3xLCw1usmD_wx81BXUon7k3OWdZKjj2CYYitNHN1KC6ZSRBsL4NKmtDLzzzz9mGJnoehYuygectEO7YNoVVwKo_p_1vBk2Gi9_",
+      "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sX2FlY2ZmYTU1YWZlNzQ4NTU4YmU1MWUxMzkzZTRlZGMxEgsSBxDlvJ6zsxAYAZIBJAoKcHJvamVjdF9pZBIWQhQxMDk0ODY3MzM3MjM5MjI0Mzc4Mg&filename=&opi=89354086"
+    },
+    {
+      "id": "f6f8d40c36f64794afdd7021b3bba86b",
+      "title": "Post a Ride - Step 1",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/ADBb0ujfE1sCsSc_tgIy-fe48iVgmLwA8vvkueqG4e03M4RSDJsX2JYgdez8QzluEsesLqKVzAjxVB5Y4DtUYGI88Ym8gN6bxBTfs9UJIRalBTeB-wKYPBnNFvCJFMN_cpwMea7D4ZCwwSZcRS_NfzdX8rFBBHf2R-zvyjaQ0SLUqZP6HKF2qokIyV5c4JwsNEGHxS6_QhRTlId_1PYNnFeYWQR0PLXvPYEBn-oIgra3e6Rluk7iS-6Jjl6Q2pNW",
+      "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sX2Y5NzNhZjc1ZDNiYTRjOTBhNTE4ODk1NzllNzAyODhiEgsSBxDlvJ6zsxAYAZIBJAoKcHJvamVjdF9pZBIWQhQxMDk0ODY3MzM3MjM5MjI0Mzc4Mg&filename=&opi=89354086"
+    },
+    {
+      "id": "e35ab23201904a138f36a6af428fa08f",
+      "title": "Driver Home",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/ADBb0ugEtpBpDqs88u5sP6j5IbMoqggoIWUydXUzQzJV3jiNBEQMRBPWbUjmig8OeZB-PXUdk0JH4Bgnj3Qb3q4R12A0uJ8JahAf4f9NPOBy-TeIKeamskIxOrJ3Up48eSd2WdEhyxbxfn7qauYu4Lc2FNPoaagwjFFXNzKCTyP5ub_lLmEUyPaOQFst7zd7wcA08uJ8vi2b70cvJB_lbgVOhv64qlqaH58bzTHtsrdQlr2aPEN3PAJLFBQvtWM",
+      "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzJkOGRmMjlmNzViZTRiYmM5YzljMTZiMTgyOGM2MDgyEgsSBxDlvJ6zsxAYAZIBJAoKcHJvamVjdF9pZBIWQhQxMDk0ODY3MzM3MjM5MjI0Mzc4Mg&filename=&opi=89354086"
+    },
+    {
+      "id": "3a186ef532d440bab503b0c5f73f8178",
+      "title": "Manage Ride Details",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/ADBb0ugqapAB9m6yNDUj-mx8mfNQn9ew7jRSV5lz3UqtaKH08_tPGV2pKa3rOiyHueb4-eyLqFGDD5W4IuXBfWlGg_Md2lCCWVc4kuLpe96ZqcYL5D5_-KKXhJ2N2kEuDkmK-W_Wko4MIkd1yb3d6Jz6BXh_QU9zpUWz5oLaWw3Q6k3PMltnnpMyQWuZsvFEYGxN4PBbVevEE0IK4OJJ7Ea5mSv8Z9mwXtl8hqijYgDCNhT0aHHXdH5B2-u032uc",
+      "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzg5YjRlMjQ5YmY4OTQzYmViYzhlZWUxNGRmZGNhYTM4EgsSBxDlvJ6zsxAYAZIBJAoKcHJvamVjdF9pZBIWQhQxMDk0ODY3MzM3MjM5MjI0Mzc4Mg&filename=&opi=89354086"
+    },
+    {
+      "id": "6a7f2f02e8e2480481ccfaec7cf2848f",
+      "title": "Search Results",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/ADBb0uiI1BA7tqdR8BigiK7ZCdcUTrvKvdRGS7pt8Ij1M-BoKE5crJOe3XR8Yw4lP_w4Hv2wKde3BNPScdM1JKCxSWkrWElAfko_AqqSpyrDRKI3B7IVJdcM2vPI_PVla4RbqsPFLz-we4GhRykpQviVgzFVywgoQesyo9EHpIj-Gz8nonOWwdVxjTCNWkOdPro2TzFxgNq-Kv4uXnDfnYrNVv_XENO1aCUFLcE--seVGE8ixWC5lk5LIipyoLVy",
+      "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sX2I0MjAxN2VhNWNkNzQwZjU4MGRiYjliYjI4YmU2NzUyEgsSBxDlvJ6zsxAYAZIBJAoKcHJvamVjdF9pZBIWQhQxMDk0ODY3MzM3MjM5MjI0Mzc4Mg&filename=&opi=89354086"
+    },
+    {
+      "id": "611f6492f606466890ac101f602e46d6",
+      "title": "Ride Detail",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/ADBb0uh21ATbWO4fXqKSbz7Cvhcfw1wpeQVcFyrBN47-S3iGeQla_hQ1W5K3lOgAkVM1_iSeRJ7LydpP62w-KoKbyTz3eg15Q1KRlUXgHG5-IRYLXhL-sZvd3zVm3tvRMWPemOuBkKP88auTIU9Yx68jDCeZwWlaT-2TE6oiZ6TU7-L5Pmhj_2xxblx0u23sifonlCYu22BrU2DScgJz6QOQqW7pRx8dh8gjGsWNdW61nmIMij86ZpEWTUsYPZNh",
+      "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sX2E0NWIzM2U2MjZmODRiZDJhZjZkNWFmM2Q2N2ZjZTllEgsSBxDlvJ6zsxAYAZIBJAoKcHJvamVjdF9pZBIWQhQxMDk0ODY3MzM3MjM5MjI0Mzc4Mg&filename=&opi=89354086"
+    },
+    {
+      "id": "e508876e8793480484ed579680abdf80",
+      "title": "Rider Home - Updated Toggle",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/ADBb0ugAs3nqzeRh0crv_pv5I7VVN5g3irmxS0_FVR3Vz0tTIM4S8z4ypgNu5jQdPGvTd34fO99UW9OUcG2o77IKlriziSM_cpdYWL-WX7f6Y2lIP3XBQ602xOOjAxXT0QV-VQ3cyVRYoUrwEj7iee5It-Lk4lbMWc4sV-1ZFBVj2f7PXpr2EhzlALN33X3hSwW5Yh2fWk2XYj7pehPhuhsNl80f4CuR3FDoZvSo8yscRLWSwpclqcQsbB0FV_ha",
+      "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzFjMjcxMWQ3N2Q0NjQzYjM4ODY3M2I3NGYyNjVjN2QxEgsSBxDlvJ6zsxAYAZIBJAoKcHJvamVjdF9pZBIWQhQxMDk0ODY3MzM3MjM5MjI0Mzc4Mg&filename=&opi=89354086"
+    },
+    {
+      "id": "4f311b10543a42d0bb7a2fc8b436067f",
+      "title": "Driver Home - Updated Toggle",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/ADBb0uj6rlxbPQRTb324EoLoDCZRPr6P7Z6A0a-Oo2eVGifiBh0XN6h0R9mCT_QeBWxaJQGnh26Y_echeHUX8VEB3060NtcSbw8m5xgKOS_wU0_2PS5ZFWintLIhx2mo4jrLjGQih0B-FdL7ShIub-1qjS0RZGp7l-CdQarDSq_AwKd9IkD96B9TT4IWp1HNVLcmWZRAergCfd9G-cKl5w39go_zL7GQlyqc-1nYDKmvZtVS8AHH_BVL4Kbk2jLP",
+      "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzU2YzU0YzIwMmU5MTQ0NDc4MjZjZTNmM2IzZGZlZDJlEgsSBxDlvJ6zsxAYAZIBJAoKcHJvamVjdF9pZBIWQhQxMDk0ODY3MzM3MjM5MjI0Mzc4Mg&filename=&opi=89354086"
+    }
+  ]
+}

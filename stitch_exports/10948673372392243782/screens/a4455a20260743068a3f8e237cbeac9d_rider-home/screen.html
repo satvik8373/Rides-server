@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AhmedabadCar - Rider Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-fixed-variant": "#802a0b",
+                      "on-primary-container": "#9aedcf",
+                      "surface": "#f9f9f7",
+                      "on-tertiary-fixed-variant": "#3f35a3",
+                      "on-surface": "#1a1c1b",
+                      "on-secondary-container": "#732103",
+                      "surface-container": "#eeeeec",
+                      "surface-container-low": "#f4f4f1",
+                      "tertiary-container": "#5b52bf",
+                      "surface-container-highest": "#e2e3e0",
+                      "on-primary-fixed": "#002117",
+                      "on-tertiary-fixed": "#140067",
+                      "inverse-surface": "#2f3130",
+                      "surface-container-lowest": "#ffffff",
+                      "on-error-container": "#93000a",
+                      "surface-dim": "#dadad8",
+                      "inverse-on-surface": "#f1f1ef",
+                      "surface-container-high": "#e8e8e6",
+                      "secondary-fixed": "#ffdbd0",
+                      "error-container": "#ffdad6",
+                      "tertiary": "#4238a5",
+                      "on-error": "#ffffff",
+                      "on-tertiary": "#ffffff",
+                      "inverse-primary": "#84d6b9",
+                      "tertiary-fixed": "#e3dfff",
+                      "background": "#f9f9f7",
+                      "secondary-container": "#fd8862",
+                      "tertiary-fixed-dim": "#c5c0ff",
+                      "surface-variant": "#e2e3e0",
+                      "surface-tint": "#086b53",
+                      "on-tertiary-container": "#ddd9ff",
+                      "outline": "#6f7a74",
+                      "on-primary-fixed-variant": "#00513e",
+                      "outline-variant": "#bec9c3",
+                      "on-surface-variant": "#3f4944",
+                      "on-background": "#1a1c1b",
+                      "surface-bright": "#f9f9f7",
+                      "primary-fixed": "#a0f3d4",
+                      "primary": "#005440",
+                      "secondary-fixed-dim": "#ffb59e",
+                      "on-primary": "#ffffff",
+                      "primary-container": "#0f6e56",
+                      "secondary": "#9f4121",
+                      "error": "#ba1a1a",
+                      "on-secondary": "#ffffff",
+                      "primary-fixed-dim": "#84d6b9",
+                      "on-secondary-fixed": "#3a0b00"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Inter"],
+                      "body": ["Inter"],
+                      "label": ["Inter"]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .fill-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="bg-[#f9f9f7]/80 dark:bg-neutral-900/80 backdrop-blur-xl docked full-width top-0 sticky z-50 shadow-[0px_4px_12px_rgba(26,28,27,0.04)] no-border tonal-layering">
+<div class="flex justify-between items-center w-full px-6 py-4">
+<div class="flex items-center gap-4">
+<button class="hover:bg-neutral-100/50 dark:hover:bg-neutral-800/50 transition-colors p-2 rounded-full active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[#005440] dark:text-[#0f6e56]">menu</span>
+</button>
+<h1 class="text-xl font-bold tracking-tighter text-[#005440] dark:text-[#0f6e56] font-headline">AhmedabadCar</h1>
+</div>
+<div class="flex items-center gap-3">
+<!-- Mode Toggle -->
+<div class="bg-surface-container-high rounded-full px-3 py-1 flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">directions_car</span>
+<span class="text-xs font-bold uppercase tracking-wider text-on-surface-variant">Ride Mode</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center overflow-hidden">
+<img alt="User profile avatar" class="w-full h-full object-cover" data-alt="professional portrait of a person in high-end business casual attire with soft studio lighting and neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0jNyNbUd1O217Sz93P6nHG6HvkEDic-3m369prPxOPB1QxJcZoY7mGGHy9aMZvkZchCcdwrNZkXoTkY82glYgk2tLRnPZZ0SKCPwXhF1P6gbNvcwRhQCRlt_8wzYXt-tlCwLWMCyXylt7K1nDPYIyjci7liSi2owa5OjVEiDQz0y79U63tD5n2BZisHmX6kRGpdZwULGcyfKAuSjifoEz726wMGbOeRPzx1Xj4gTJDxDcWYBopyhK6U50gGdvm_0YjhrJFJFLoVZ0"/>
+</div>
+</div>
+</div>
+</header>
+<main class="px-6 pt-8 max-w-5xl mx-auto space-y-10">
+<!-- Search Section -->
+<section class="space-y-6">
+<div class="space-y-1">
+<h2 class="text-3xl font-black tracking-tight text-on-surface -ml-1">Where to?</h2>
+<p class="text-on-surface-variant text-sm">Travel comfortably across Gujarat</p>
+</div>
+<!-- Bento-style Search Box -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+<div class="md:col-span-8 bg-surface-container-lowest rounded-[28px] p-6 shadow-[0px_4px_12px_rgba(26,28,27,0.04)] space-y-4">
+<div class="relative space-y-1">
+<div class="flex items-center gap-4 px-4 py-3 bg-surface-container rounded-2xl">
+<span class="material-symbols-outlined text-primary">my_location</span>
+<input class="bg-transparent border-none focus:ring-0 w-full text-on-surface placeholder-on-surface-variant font-medium" placeholder="From: Current Location" type="text"/>
+</div>
+<div class="absolute left-8 top-12 h-6 w-[2px] bg-outline-variant/30"></div>
+<div class="flex items-center gap-4 px-4 py-3 bg-surface-container rounded-2xl">
+<span class="material-symbols-outlined text-secondary">location_on</span>
+<input class="bg-transparent border-none focus:ring-0 w-full text-on-surface placeholder-on-surface-variant font-medium" placeholder="To: Destination city or landmark" type="text"/>
+</div>
+</div>
+</div>
+<div class="md:col-span-4 grid grid-cols-2 gap-4">
+<div class="bg-surface-container-lowest rounded-[28px] p-4 shadow-[0px_4px_12px_rgba(26,28,27,0.04)] flex flex-col justify-center items-center text-center space-y-2">
+<span class="material-symbols-outlined text-secondary">calendar_today</span>
+<div>
+<p class="text-[10px] font-extrabold uppercase tracking-widest text-on-surface-variant">Date</p>
+<p class="font-bold text-sm">Oct 24</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-[28px] p-4 shadow-[0px_4px_12px_rgba(26,28,27,0.04)] flex flex-col justify-center items-center text-center space-y-2">
+<span class="material-symbols-outlined text-secondary">groups</span>
+<div>
+<p class="text-[10px] font-extrabold uppercase tracking-widest text-on-surface-variant">Seats</p>
+<p class="font-bold text-sm">2 People</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Upcoming Trips -->
+<section class="space-y-4">
+<div class="flex justify-between items-end">
+<h3 class="text-xl font-bold tracking-tight text-on-surface">Upcoming Trips</h3>
+<button class="text-primary font-bold text-sm">View All</button>
+</div>
+<div class="bg-primary-container/10 rounded-[32px] p-1 overflow-hidden">
+<div class="bg-surface-container-lowest rounded-[31px] p-6 flex flex-col md:flex-row md:items-center justify-between gap-6 border border-primary/5">
+<div class="flex items-center gap-5">
+<div class="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">directions_car</span>
+</div>
+<div>
+<p class="text-[10px] font-extrabold uppercase tracking-widest text-primary mb-1">In 2 Hours</p>
+<h4 class="font-bold text-lg">Ahmedabad to Rajkot</h4>
+<p class="text-on-surface-variant text-sm">Toyota Innova • GJ 01 RX 1234</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="text-right">
+<p class="text-xs text-on-surface-variant">Total Fare</p>
+<p class="text-lg font-black text-secondary">₹1,250</p>
+</div>
+<button class="bg-primary hover:opacity-90 text-white px-6 py-3 rounded-[14px] font-bold transition-all active:scale-95">Details</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Recent Searches (Glassmorphism) -->
+<section class="space-y-4">
+<h3 class="text-xl font-bold tracking-tight text-on-surface">Recent Searches</h3>
+<div class="flex gap-4 overflow-x-auto pb-4 no-scrollbar -mx-6 px-6">
+<div class="min-w-[240px] bg-white/40 backdrop-blur-md border border-white/50 p-5 rounded-[24px] shadow-sm flex flex-col justify-between h-36">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-secondary">history</span>
+<span class="text-[10px] font-bold text-on-surface-variant">2 days ago</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Surat</h4>
+<p class="text-xs text-on-surface-variant">1 Passenger • One-way</p>
+</div>
+</div>
+<div class="min-w-[240px] bg-white/40 backdrop-blur-md border border-white/50 p-5 rounded-[24px] shadow-sm flex flex-col justify-between h-36">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-secondary">history</span>
+<span class="text-[10px] font-bold text-on-surface-variant">Yesterday</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Vadodara Central</h4>
+<p class="text-xs text-on-surface-variant">3 Passengers • Round-trip</p>
+</div>
+</div>
+<div class="min-w-[240px] bg-white/40 backdrop-blur-md border border-white/50 p-5 rounded-[24px] shadow-sm flex flex-col justify-between h-36">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-secondary">history</span>
+<span class="text-[10px] font-bold text-on-surface-variant">5 days ago</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Gandhinagar Sect 21</h4>
+<p class="text-xs text-on-surface-variant">2 Passengers • One-way</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Visual Anchor: Map Preview -->
+<section class="rounded-[32px] overflow-hidden h-64 relative shadow-2xl">
+<div class="absolute inset-0 bg-neutral-200">
+<img alt="Map view of Ahmedabad" class="w-full h-full object-cover opacity-80" data-alt="Modern stylized map interface with clean lines, soft green and grey tones showing city streets of Ahmedabad, India" data-location="Ahmedabad" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkASNeAjZaRLDZOBK2Yl8DU5sz0gJN4LztTIgu0BHeXbwFqLLJd2YTf8QzWiiQDEI1HBlBOrjTUFjfePAF6aFB_3PI3wDLWWXlU8o8yF9qwgChf-Us6qU90HQc-PAOtbjtR6b7gJW7SVU7prnFrodGye3wgYJWVxCau8tAnwEnim3zapxchROAWFylfXdnHX-tcZic_il4o1t3DBY2nETVKApWU76yU1qwjw6X36sReyI0DFbhVqU-6d4iXfchUDPr9v9HvEmjWlaO"/>
+</div>
+<div class="absolute bottom-6 left-6 right-6 bg-surface-container-lowest/90 backdrop-blur-md rounded-2xl p-4 flex items-center justify-between">
+<div>
+<h4 class="font-bold text-sm">Quick Map Search</h4>
+<p class="text-xs text-on-surface-variant">Find drivers currently on route</p>
+</div>
+<span class="material-symbols-outlined text-primary">arrow_forward_ios</span>
+</div>
+</section>
+</main>
+<!-- FAB -->
+<button class="fixed bottom-28 right-6 w-16 h-16 rounded-[24px] bg-secondary shadow-2xl flex items-center justify-center text-white active:scale-90 transition-all z-40 group">
+<span class="material-symbols-outlined text-3xl group-hover:rotate-12 transition-transform">search</span>
+</button>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white/80 dark:bg-black/80 backdrop-blur-2xl z-50 rounded-t-[24px] shadow-[0px_-4px_12px_rgba(26,28,27,0.04)] no-border tonal-layering">
+<a class="flex flex-col items-center justify-center bg-[#0f6e56]/10 text-[#005440] dark:text-[#0f6e56] rounded-2xl px-4 py-1 tap-highlight-none active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined fill-icon" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-[11px] font-extrabold uppercase tracking-widest mt-1 font-label">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-neutral-400 dark:text-neutral-500 hover:text-[#005440] dark:hover:text-[#0f6e56] tap-highlight-none active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="directions_car">directions_car</span>
+<span class="text-[11px] font-extrabold uppercase tracking-widest mt-1 font-label">My Trips</span>
+</a>
+<a class="flex flex-col items-center justify-center text-neutral-400 dark:text-neutral-500 hover:text-[#005440] dark:hover:text-[#0f6e56] tap-highlight-none active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="chat_bubble">chat_bubble</span>
+<span class="text-[11px] font-extrabold uppercase tracking-widest mt-1 font-label">Messages</span>
+</a>
+<a class="flex flex-col items-center justify-center text-neutral-400 dark:text-neutral-500 hover:text-[#005440] dark:hover:text-[#0f6e56] tap-highlight-none active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="text-[11px] font-extrabold uppercase tracking-widest mt-1 font-label">Profile</span>
+</a>
+</nav>
+</body></html>

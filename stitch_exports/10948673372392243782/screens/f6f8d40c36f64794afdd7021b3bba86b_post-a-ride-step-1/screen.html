@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed-variant": "#802a0b",
+                    "on-primary-container": "#9aedcf",
+                    "surface": "#f9f9f7",
+                    "on-tertiary-fixed-variant": "#3f35a3",
+                    "on-surface": "#1a1c1b",
+                    "on-secondary-container": "#732103",
+                    "surface-container": "#eeeeec",
+                    "surface-container-low": "#f4f4f1",
+                    "tertiary-container": "#5b52bf",
+                    "surface-container-highest": "#e2e3e0",
+                    "on-primary-fixed": "#002117",
+                    "on-tertiary-fixed": "#140067",
+                    "inverse-surface": "#2f3130",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "surface-dim": "#dadad8",
+                    "inverse-on-surface": "#f1f1ef",
+                    "surface-container-high": "#e8e8e6",
+                    "secondary-fixed": "#ffdbd0",
+                    "error-container": "#ffdad6",
+                    "tertiary": "#4238a5",
+                    "on-error": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "inverse-primary": "#84d6b9",
+                    "tertiary-fixed": "#e3dfff",
+                    "background": "#f9f9f7",
+                    "secondary-container": "#fd8862",
+                    "tertiary-fixed-dim": "#c5c0ff",
+                    "surface-variant": "#e2e3e0",
+                    "surface-tint": "#086b53",
+                    "on-tertiary-container": "#ddd9ff",
+                    "outline": "#6f7a74",
+                    "on-primary-fixed-variant": "#00513e",
+                    "outline-variant": "#bec9c3",
+                    "on-surface-variant": "#3f4944",
+                    "on-background": "#1a1c1b",
+                    "surface-bright": "#f9f9f7",
+                    "primary-fixed": "#a0f3d4",
+                    "primary": "#005440",
+                    "secondary-fixed-dim": "#ffb59e",
+                    "on-primary": "#ffffff",
+                    "primary-container": "#0f6e56",
+                    "secondary": "#9f4121",
+                    "error": "#ba1a1a",
+                    "on-secondary": "#ffffff",
+                    "primary-fixed-dim": "#84d6b9",
+                    "on-secondary-fixed": "#3a0b00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col">
+<!-- Top Navigation Bar -->
+<header class="bg-[#f9f9f7]/80 dark:bg-neutral-900/80 backdrop-blur-xl docked full-width top-0 sticky z-50 shadow-[0px_4px_12px_rgba(26,28,27,0.04)] flex justify-between items-center w-full px-6 py-4">
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-[#005440] hover:bg-neutral-100/50 p-2 rounded-full transition-colors active:scale-95">arrow_back</button>
+<h1 class="text-xl font-bold tracking-tighter text-[#005440] dark:text-[#0f6e56]">AhmedabadCar</h1>
+</div>
+<div class="flex items-center gap-3">
+<div class="hidden md:flex gap-6 mr-6">
+<span class="text-neutral-500 font-medium text-sm cursor-pointer hover:text-[#005440] transition-colors">Help</span>
+<span class="text-neutral-500 font-medium text-sm cursor-pointer hover:text-[#005440] transition-colors">Safety</span>
+</div>
+<img class="w-10 h-10 rounded-full object-cover shadow-sm ring-2 ring-white" data-alt="Close up portrait of a smiling middle-aged professional man with glasses in a modern office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-aBU_k6-uhrjJ8_I_lIbpOADuzBdS0oV7q2vsTIuTHFuK-rcvwBQXUA5fhqqPSRzjno0aR5HyPK-CDZmInNMZw-MlZ8yBLoGinZn2gn292sxuDsQIRhwvwCoFah5tGyHpyhmPxxPMkmjHpeAhYZTSdlU1ilnLLPWN-41-JTrzvNbNDs11Muxlky_XQvTlf0R1Eq_ATbkFcoSyDdBHu4PUFE7OV6GRlkl_gttgeEEV9U0JlYbCVQED7RsykJlJ2qCysBf6LQv9NqNA"/>
+</div>
+</header>
+<main class="flex-grow max-w-4xl mx-auto w-full px-6 pt-10 pb-32">
+<!-- Step Progress -->
+<div class="mb-10">
+<div class="flex justify-between items-end mb-4">
+<div>
+<span class="text-[#0f6e56] font-extrabold text-[11px] uppercase tracking-[0.2em] block mb-1">Step 1 of 3</span>
+<h2 class="text-3xl font-black tracking-tight text-on-surface leading-tight">Post a New Ride</h2>
+</div>
+<div class="flex gap-1.5 pb-2">
+<div class="h-1.5 w-12 rounded-full bg-[#005440]"></div>
+<div class="h-1.5 w-12 rounded-full bg-surface-container-high"></div>
+<div class="h-1.5 w-12 rounded-full bg-surface-container-high"></div>
+</div>
+</div>
+<p class="text-on-surface-variant font-medium">Enter your journey details to start finding passengers.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Main Form Section -->
+<div class="lg:col-span-8 space-y-8">
+<!-- Route Selection -->
+<div class="bg-surface-container-lowest rounded-[24px] p-6 shadow-[0px_4px_12px_rgba(26,28,27,0.04)]">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-[#0f6e56]" style="font-variation-settings: 'FILL' 1;">route</span>
+<h3 class="font-bold text-lg tracking-tight">Route Details</h3>
+</div>
+<div class="space-y-4 relative">
+<!-- Origin Input -->
+<div class="relative">
+<label class="block text-[11px] font-extrabold uppercase tracking-widest text-[#0f6e56] mb-2 px-1">Departure Point</label>
+<div class="group flex items-center bg-surface-container-low focus-within:bg-surface-container-lowest focus-within:ring-2 ring-[#0f6e56]/10 rounded-xl transition-all">
+<span class="material-symbols-outlined text-outline-variant px-4">radio_button_checked</span>
+<input class="w-full bg-transparent border-none focus:ring-0 py-4 text-on-surface font-medium placeholder:text-outline" placeholder="Starting from..." type="text" value="Sindhu Bhavan Road, Ahmedabad"/>
+</div>
+</div>
+<!-- Connection Line -->
+<div class="absolute left-6 top-20 bottom-10 w-[2px] bg-outline-variant/20 -z-0"></div>
+<!-- Destination Input -->
+<div class="relative">
+<label class="block text-[11px] font-extrabold uppercase tracking-widest text-[#0f6e56] mb-2 px-1">Arrival Destination</label>
+<div class="group flex items-center bg-surface-container-low focus-within:bg-surface-container-lowest focus-within:ring-2 ring-[#0f6e56]/10 rounded-xl transition-all">
+<span class="material-symbols-outlined text-secondary px-4">location_on</span>
+<input class="w-full bg-transparent border-none focus:ring-0 py-4 text-on-surface font-medium placeholder:text-outline" placeholder="Where are you going?" type="text"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Schedule & Availability -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Date & Time -->
+<div class="bg-surface-container-lowest rounded-[24px] p-6 shadow-[0px_4px_12px_rgba(26,28,27,0.04)]">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-[#0f6e56]">calendar_today</span>
+<h3 class="font-bold text-lg tracking-tight">Schedule</h3>
+</div>
+<div class="space-y-4">
+<div class="bg-surface-container-low rounded-xl p-4 flex items-center justify-between cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-on-surface-variant">event</span>
+<span class="font-semibold">Today, 24 Oct</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant">expand_more</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-4 flex items-center justify-between cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-on-surface-variant">schedule</span>
+<span class="font-semibold">06:30 PM</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Seats Selector -->
+<div class="bg-surface-container-lowest rounded-[24px] p-6 shadow-[0px_4px_12px_rgba(26,28,27,0.04)]">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-[#0f6e56]">airline_seat_recline_normal</span>
+<h3 class="font-bold text-lg tracking-tight">Seats</h3>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low rounded-2xl p-6">
+<button class="w-12 h-12 flex items-center justify-center rounded-xl bg-white shadow-sm text-primary active:scale-90 transition-transform">
+<span class="material-symbols-outlined">remove</span>
+</button>
+<div class="text-center">
+<span class="text-3xl font-black block leading-none">03</span>
+<span class="text-[10px] font-extrabold uppercase tracking-tighter text-on-surface-variant">Available</span>
+</div>
+<button class="w-12 h-12 flex items-center justify-center rounded-xl bg-[#005440] text-white shadow-lg active:scale-90 transition-transform">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Recurring Toggle -->
+<div class="bg-surface-container-lowest rounded-[24px] p-6 shadow-[0px_4px_12px_rgba(26,28,27,0.04)] flex items-center justify-between">
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-xl bg-[#0f6e56]/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-[#005440]">repeat</span>
+</div>
+<div>
+<h4 class="font-bold leading-tight">Make this a Recurring Trip</h4>
+<p class="text-sm text-on-surface-variant">Perfect for daily office commuters</p>
+</div>
+</div>
+<div class="w-14 h-8 bg-surface-container-high rounded-full relative p-1 cursor-pointer">
+<div class="w-6 h-6 bg-white rounded-full shadow-md"></div>
+</div>
+</div>
+</div>
+<!-- Sidebar / Insights Section -->
+<div class="lg:col-span-4 space-y-6">
+<!-- Price Suggestion Card -->
+<div class="bg-[#005440] rounded-[28px] p-6 text-white overflow-hidden relative">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-[#0f6e56] rounded-full blur-2xl opacity-50"></div>
+<div class="relative z-10">
+<span class="text-[#9aedcf] font-extrabold text-[10px] uppercase tracking-widest block mb-4">Recommended Pricing</span>
+<div class="flex items-baseline gap-1 mb-2">
+<span class="text-4xl font-black">₹450</span>
+<span class="text-sm opacity-70">/seat</span>
+</div>
+<p class="text-sm text-primary-fixed mb-6 leading-relaxed">Based on current demand and fuel prices for this route.</p>
+<div class="bg-black/10 rounded-2xl p-4 border border-white/10">
+<div class="flex justify-between text-sm mb-2">
+<span class="opacity-80">Full ride (3 seats)</span>
+<span class="font-bold">₹1,350</span>
+</div>
+<div class="h-[1px] bg-white/10 my-3"></div>
+<div class="flex items-center gap-2 text-[11px] font-bold text-[#9aedcf]">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+                                20% more likely to find riders
+                            </div>
+</div>
+</div>
+</div>
+<!-- Map Preview Card -->
+<div class="bg-surface-container-lowest rounded-[28px] p-2 shadow-[0px_4px_12px_rgba(26,28,27,0.04)] h-64 relative group cursor-pointer overflow-hidden">
+<div class="absolute inset-0 bg-neutral-200">
+<img class="w-full h-full object-cover grayscale opacity-80 group-hover:scale-105 transition-transform duration-700" data-alt="Modern minimalist map interface showing a driving route from one point to another with subtle green highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_h1TLHK70gcweV_VRjCeG1LuLdydJFtJMKDbdxJh5BHva5XewU-LkLcWFnaD-8u_GDhsm8OFj-5BI3wHx57cwQuxgVVKQA3a6ae04v7DC40VIU49zzaV_y0NT9btfJ7smf-GH1Qe6lhkXRixhiBOQwI0MlfCooIiWIdEJ6Rnd8zgY4_2tL1AjLGJOIJ2XT4iVIzTbQ-uh26wsxpkmfKFceH7I_0vpGpdYChxuR1mXucd0pq2rFamQL28_yrmrib1lgfnOVEY4S485"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+</div>
+<div class="absolute bottom-4 left-4 right-4 bg-white/80 backdrop-blur-md p-3 rounded-xl flex items-center justify-between">
+<span class="text-xs font-bold text-on-surface">Preview Route</span>
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+</div>
+</div>
+<!-- Driver Perk Tip -->
+<div class="p-6 rounded-[24px] bg-tertiary-fixed border border-outline-variant/10">
+<span class="material-symbols-outlined text-tertiary mb-3">auto_awesome</span>
+<h4 class="font-bold text-on-tertiary-fixed leading-tight mb-1">Earn Carbon Credits</h4>
+<p class="text-xs text-on-tertiary-fixed-variant leading-relaxed">By carpooling, you're saving ~12kg of CO2 today. Reach Gold status this month!</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Action Bar -->
+<div class="fixed bottom-0 left-0 w-full bg-white/80 dark:bg-black/80 backdrop-blur-2xl z-50 px-6 pb-8 pt-4 shadow-[0px_-4px_12px_rgba(26,28,27,0.04)]">
+<div class="max-w-4xl mx-auto flex items-center justify-between">
+<button class="text-on-surface-variant font-bold text-sm px-6 py-4 rounded-xl hover:bg-neutral-100 transition-colors">
+                Save Draft
+            </button>
+<button class="bg-gradient-to-r from-[#005440] to-[#0f6e56] text-white font-bold px-10 py-4 rounded-xl shadow-lg shadow-[#005440]/20 flex items-center gap-2 active:scale-95 transition-all">
+                Next Step
+                <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Hidden on Mobile for clean design, but present for logic -->
+<nav aria-label="Bottom Navigation Menu" class="hidden md:hidden lg:hidden">
+<!-- Structure defined in JSON for reference -->
+</nav>
+</body></html>
