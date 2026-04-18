@@ -1,7 +1,7 @@
 import "express-async-errors";
 import cors from "cors";
 import express from "express";
-import helmet from "helmet";
+import helmetModule from "helmet";
 import morgan from "morgan";
 import { errorHandlerMiddleware } from "./middleware/error-handler.js";
 import { requestContextMiddleware } from "./middleware/request-context.js";
@@ -9,6 +9,8 @@ import v1Router from "./routes/v1/index.js";
 import webhookRouter from "./routes/webhooks.js";
 import { postgresService } from "./services/postgres.service.js";
 import { seedDemoData } from "./store/data-store.js";
+
+const helmet = helmetModule;
 
 export const createApp = () => {
   const app = express();
