@@ -3,14 +3,21 @@
   "compilerOptions": {
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
-    "rootDir": "src",
     "outDir": "dist",
     "types": [
       "node",
       "vitest/globals"
-    ]
+    ],
+    "skipLibCheck": true,
+    "noEmit": false,
+    "declaration": false
   },
   "include": [
-    "src"
+    "src",
+    "../../packages/shared/src"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
   ]
 }
